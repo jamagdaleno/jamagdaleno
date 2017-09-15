@@ -1,0 +1,130 @@
+/*
+    NEW Properties:
+        header {
+            border-style: outset;
+            border-width: 10px;
+            text-shadow: 0 0 3px gray;
+        }
+*/
+        /* 1 */
+        html {
+            height: 100%;
+            font-size: 200%;
+            background-color: black;
+        }
+        
+        /* Header */
+        /* 2 */
+        header {
+            font-family: 'Courier New', 'Courier', monospace;
+            text-align:center;
+            font-size: 36px;
+            padding: 25px;
+            font-weight: bold;
+            color:green;
+            /* NEW PROPERTIES */
+            border-style: outset;
+            border-width: 10px;
+            text-shadow: 0 0 3px gray;
+            background: rgba(226,226,226,1);
+        }
+        /* 3 */
+        header a {
+            text-decoration: none;
+            color: black;
+        }
+        /* 4 */
+        header a:hover {
+            color:gray;
+            font-weight:bolder;
+        }
+        
+        /* Navigation */
+        /* 5 */
+        nav {
+            text-align:center;
+            font-size: 24px;
+            padding: 5px;
+            font-weight: bolder;
+            font-family: 'Courier New', 'Courier', monospace;
+        }
+        /* 6 */
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        /* 7 */
+        nav a:hover {
+            color:green;
+        }
+        /* 8 */
+        .active:hover {
+            color: gray;
+        }
+        /* 9 */
+        .active { 
+            text-decoration: underline overline; 
+            color:rgba(226,226,226,1)
+        }
+        /* 10 */
+        .black {
+            color:black;
+        }
+        
+        /* Main */
+        /* 11 */
+        main {
+            color:white;
+            font-family: serif;
+            font-size:18px;
+        }
+        /* 12 */
+        main a {
+            color:green;
+        }
+        /* 13 */
+        main a:hover {
+            color: green;
+            font-weight:bolder;
+        }
+        /* 14 */
+        /* New */ 
+        main a:visited {
+            color:gray;
+        }
+        /* 15 */
+        #content {
+             text-align: center;
+             margin:auto;
+        }
+        /* 16 */
+        #cd {
+            width:700px;
+            height:300px;
+        }
+        /* 17 */
+        #cst351 {
+             width:640px;
+             height:310px;
+        }
+        /* 18 */
+        #cst373 {
+            width:580px;
+            height:300px;
+        }
+        
+        /* Footer */
+        /* 19 */
+        footer {
+            text-align: center;
+            color: rgba(226,226,226,1);
+            font-size: 12px;
+            font-family: Verdana, Helvetica, Arial, sans-serif;
+            width: 100%;
+            
+        }
+        /* 20 */
+        #csumb {
+            width: 125px;
+            height: 80px;
+        }

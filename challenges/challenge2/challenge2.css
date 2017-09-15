@@ -1,0 +1,59 @@
+body {
+    font-family: 'Impact', Arial, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.0625em;
+}
+
+header {
+    font-size:36px
+    text-align: center;
+}
+
+.human, .comp {
+    font-size: 24px;
+    text-align: center;
+}
+#human {
+    float: left;
+    clear: left;
+    margin-left: 3em;
+}
+#comp {
+    float: right;
+    clear: right;
+    margin-right: 3em;
+}
+
+#reel1, #reel2 {
+    
+}
+#reel1 {
+    
+}
+
+#reel2 {
+    
+}
+
+#cards {
+    width: 72px;
+    height: 96px;
+}
+#ace {
+    
+}
+
+#jack {
+    
+}
+
+#king {
+    
+}
+
+#queen {
+    
+}
+#ten {
+    
+}

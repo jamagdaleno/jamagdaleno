@@ -1,0 +1,27 @@
+     #header {
+       color: yellow;
+       font-size: 24px;
+     }
+     
+     h1 {
+      font-size: 8em;
+      margin-bottom: 0px;
+     }
+     
+     body {
+         background-color: black;
+         text-align: center;
+         color:white;
+         font-size: 18px;
+         font-family: 'Pacifico', cursive;
+     }
+     
+     #content {
+         text-align: center;
+         margin:auto;
+     }
+     
+     img {
+         width: 500px;
+         height: 350px;
+     }
