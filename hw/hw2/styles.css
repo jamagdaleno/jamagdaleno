@@ -1,22 +1,35 @@
-h1
-{
-    color: red;
+h1 {
+    color: yellow;
     margin-left: 0px;
-    font-family: verdana;
+    font-family: Helvetica, Arial, sans-serif; 
     background-color: black;
-    border-radius: 10px;
+    border-radius: 12px;
 }
-table 
-{
+
+table  {
     background-image: url("img/giphy.gif");
 }
-td
-{
+
+td {
     border-radius: 10px;
 }
-h2
-{
+
+h2 {
     color: yellow;
     background-color: black;
     border-radius: 10px;
 }
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    background-image: url("img/giphy2.gif");
+    opacity: 0.99;
+}
+
+

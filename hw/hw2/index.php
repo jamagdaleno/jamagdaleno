@@ -17,16 +17,16 @@ $checkerboard=array();
                 $r = rand(0,4);
                 switch($r) {
                     case 0:
-                        $checkerboard[$row][$col]="red";
+                        $checkerboard[$row][$col]="blue";
                         break;
                     case 1:
                         $checkerboard[$row][$col]="00ff18";
                         break;
                     case 2:
-                        $checkerboard[$row][$col]="blue";
+                        $checkerboard[$row][$col]="yellow";
                         break;
                     case 3:
-                        $checkerboard[$row][$col]="yellow";
+                        $checkerboard[$row][$col]="red";
                         break;
                     case 4:
                         $checkerboard[$row][$col]="fc00ff";
@@ -141,7 +141,7 @@ echo "</table>";
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Assignment 2</title>
+        <title>Homework 2</title>
 
         <link rel="stylesheet" href="styles.css">
         
