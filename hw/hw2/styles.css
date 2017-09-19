@@ -1,0 +1,22 @@
+h1
+{
+    color: red;
+    margin-left: 0px;
+    font-family: verdana;
+    background-color: black;
+    border-radius: 10px;
+}
+table 
+{
+    background-image: url("img/giphy.gif");
+}
+td
+{
+    border-radius: 10px;
+}
+h2
+{
+    color: yellow;
+    background-color: black;
+    border-radius: 10px;
+}
