@@ -23,7 +23,7 @@
                 return false;
             }
             
-            if (empty($_GET['email']));
+            if (empty($_POST['email']));
             {
                 return false;
             }
@@ -45,18 +45,18 @@
             global $name, $age, $social, $email, $message;
         }
         //create variables
-        $name = $_GET['name'];
-        $age = $_GET['age'];
-        $social = $_GET['social'];
-        $email = $_GET['email'];
-        $message = $_GET['message'];
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $social = $_POST['social'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
         
 
         //                      end of php code and start of html code
     ?>
     <h2>Survey Time</h2>
     <hr>
-        <form method="get" action="http://webdevbasics.net/scripts/demo.php">
+        <form method="get" action="inc/returnData.php">
             
             <label for="Name"><span class="question">Name:</span></label>
                 <input type="text" name="name" alt="Name?" size="20" placeholder="Required" required="required" />
@@ -70,8 +70,8 @@
                 <input type="radio" name="age" alt="Age?" value="60+"> 60+
             <hr>
             
-            <fieldset>
-                <legend><span class="question">What social media sites do you use frequently?</span></legend>
+            <fieldset name="social">
+                <legend name="social"><span class="question">What social media sites do you use frequently?</span></legend>
                     <input type="checkbox" name="social" alt="Social Media" id="Facebook" value="Facebook"> Facebook 
                     <input type="checkbox" name="social" alt="Social Media" id="MySpcae" value="MySpace"> MySpace
                     <input type="checkbox" name="social" alt="Social Media" id="Twitter" value="Twitter"> Twitter
@@ -104,11 +104,5 @@
             <hr>
             
         </form>
-        <?php
-                    if (htmlForm())
-        {
-            echo "Thanks for taking the time to complete my survey," . $name . "!";
-        }
-        ?>
     </body>
 </html>

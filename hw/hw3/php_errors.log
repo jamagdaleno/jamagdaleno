@@ -1,0 +1,43 @@
+[11-Oct-2017 19:21:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 30
+[11-Oct-2017 19:22:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 23
+[11-Oct-2017 19:22:34 UTC] PHP Stack trace:
+[11-Oct-2017 19:22:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:23:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 23
+[11-Oct-2017 19:23:54 UTC] PHP Stack trace:
+[11-Oct-2017 19:23:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:23:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 23
+[11-Oct-2017 19:23:56 UTC] PHP Stack trace:
+[11-Oct-2017 19:23:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:23:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 23
+[11-Oct-2017 19:23:58 UTC] PHP Stack trace:
+[11-Oct-2017 19:23:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:25:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 22
+[11-Oct-2017 19:25:43 UTC] PHP Stack trace:
+[11-Oct-2017 19:25:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:26:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 22
+[11-Oct-2017 19:26:15 UTC] PHP Stack trace:
+[11-Oct-2017 19:26:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:26:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 22
+[11-Oct-2017 19:26:18 UTC] PHP Stack trace:
+[11-Oct-2017 19:26:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:26:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 22
+[11-Oct-2017 19:26:56 UTC] PHP Stack trace:
+[11-Oct-2017 19:26:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:27:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 22
+[11-Oct-2017 19:27:00 UTC] PHP Stack trace:
+[11-Oct-2017 19:27:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:28:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 25
+[11-Oct-2017 19:28:20 UTC] PHP Stack trace:
+[11-Oct-2017 19:28:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:28:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 25
+[11-Oct-2017 19:28:22 UTC] PHP Stack trace:
+[11-Oct-2017 19:28:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:29:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 25
+[11-Oct-2017 19:29:10 UTC] PHP Stack trace:
+[11-Oct-2017 19:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:29:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 25
+[11-Oct-2017 19:29:11 UTC] PHP Stack trace:
+[11-Oct-2017 19:29:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
+[11-Oct-2017 19:30:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php on line 25
+[11-Oct-2017 19:30:01 UTC] PHP Stack trace:
+[11-Oct-2017 19:30:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/jamagdaleno/hw/hw3/inc/returnData.php:0
