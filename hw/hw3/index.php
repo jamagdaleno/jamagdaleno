@@ -44,28 +44,25 @@
         {
             global $name, $age, $social, $email, $message;
         }
-        
+        //create variables
         $name = $_GET['name'];
         $age = $_GET['age'];
         $social = $_GET['social'];
         $email = $_GET['email'];
         $message = $_GET['message'];
         
-        if (htmlForm())
-        {
-            echo "Thanks for taking the time to complete my survey," . $name . "!";
-        }
-        //end of php code
+
+        //                      end of php code and start of html code
     ?>
     <h2>Survey Time</h2>
-    
+    <hr>
         <form method="get" action="http://webdevbasics.net/scripts/demo.php">
             
-            <label for="Name">Name:</label>
+            <label for="Name"><span class="question">Name:</span></label>
                 <input type="text" name="name" alt="Name?" size="20" placeholder="Required" required="required" />
             <hr>
             
-            <label for="Age">Age:</label>
+            <label for="Age"><span class="question">Age:</span></label>
                 <input type="radio" name="age" alt="Age?" value="<18">< 18
                 <input type="radio" name="age" alt="Age?" value="18-29"> 18-29
                 <input type="radio" name="age" alt="Age?" value="30-44"> 30-44
@@ -74,21 +71,21 @@
             <hr>
             
             <fieldset>
-                <legend>What social media sites do you use frequently?</legend>
-                    <input type="checkbox" name="color" alt="Social Media" id="Facebook" value="Facebook"> Facebook 
-                    <input type="checkbox" name="color" alt="Social Media" id="MySpcae" value="MySpace"> MySpace
-                    <input type="checkbox" name="color" alt="Social Media" id="Twitter" value="Twitter"> Twitter<br>
-                    <input type="checkbox" name="color" alt="Social Media" id="Pinterest" value="Pinterest"> Pinterest
-                    <input type="checkbox" name="color" alt="Social Media" id="Tumblr" value="Tumblr"> Tumblr
-                    <input type="checkbox" name="color" alt="Social Media" id="LinkedIn" value="LinkedIn"> Linkedin<br>
-                    <input type="checkbox" name="color" alt="Social Media" id="Instagram" value="Instagram"> Instagram
-                    <input type="checkbox" name="color" alt="Social Media" id="Snapchat" value="Snapchat"> Snapchat
-                    <input type="checkbox" name="color" alt="Social Media" id="None" value="None"> Nada.<br>
+                <legend><span class="question">What social media sites do you use frequently?</span></legend>
+                    <input type="checkbox" name="social" alt="Social Media" id="Facebook" value="Facebook"> Facebook 
+                    <input type="checkbox" name="social" alt="Social Media" id="MySpcae" value="MySpace"> MySpace
+                    <input type="checkbox" name="social" alt="Social Media" id="Twitter" value="Twitter"> Twitter
+                    <input type="checkbox" name="social" alt="Social Media" id="Pinterest" value="Pinterest"> Pinterest
+                    <input type="checkbox" name="social" alt="Social Media" id="Tumblr" value="Tumblr"> Tumblr
+                    <input type="checkbox" name="social" alt="Social Media" id="LinkedIn" value="LinkedIn"> Linkedin
+                    <input type="checkbox" name="social" alt="Social Media" id="Instagram" value="Instagram"> Instagram
+                    <input type="checkbox" name="social" alt="Social Media" id="Snapchat" value="Snapchat"> Snapchat
+                    <input type="checkbox" name="social" alt="Social Media" id="None" value="None"> None of these.
             </fieldset>
             <hr>
             
-            What email service do you use?<br>
-            <select name="Email" id="Email">
+            <span class="question">What email service do you use?</span><br>
+            <select name="email" id="email">
                 <option value="" selected="selected" alt="Choose one:">Choose one:</option>
                 <option value="Gmail" alt="Gmail">Gmail</option>
                 <option value="Yahoo" alt="Yahoo">Yahoo</option>
@@ -97,7 +94,7 @@
             </select>
             <hr>
             
-            <label for="message">Leave a message?</label>
+            <label for="message"><span class="question">Leave a message?</span></label>
             <br>
             <textarea name="message" id="message "cols="50" rows="5" maxlength="500"></textarea>
             <br>
@@ -107,5 +104,11 @@
             <hr>
             
         </form>
+        <?php
+                    if (htmlForm())
+        {
+            echo "Thanks for taking the time to complete my survey," . $name . "!";
+        }
+        ?>
     </body>
 </html>

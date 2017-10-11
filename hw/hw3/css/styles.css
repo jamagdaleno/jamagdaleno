@@ -12,3 +12,7 @@ textarea {
 h2 {
     color:white;
 }
+
+.question {
+    font-weight:bold;
+}
