@@ -1,0 +1,28 @@
+body {
+    font-family: "Verdana", "Arial", sans-serif;
+    margin: auto;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1, h3 {
+    padding: 15px;
+}
+
+a {
+    color:white;
+}
+
+iframe {
+    height: 500px;
+    width: 300px;
+    border: none;
+}
+
+.bolder {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
