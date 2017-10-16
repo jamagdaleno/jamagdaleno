@@ -12,10 +12,11 @@ $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 $dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 */
 
-include '../../../dbConnection.php';
+include 'dbConnection.php';
 $dbConn = getDatabaseConnection();
 
 //This works but it's very time consuming. Not efficient.
+/*
 function getRandomQuote_NotEfficient() {
     
     global $dbConn;
@@ -34,20 +35,21 @@ function getRandomQuote_NotEfficient() {
     //print_r($records);
 
 }
+*/
 
 
-function getRandomQuote() {
-    
+function getRandomQuote() 
+{
     global $dbConn;
     
     
-    //Retrieve all quote Ids
-    //Select one quoteId randomly
-    //Get the quote for that quoteId
+    //Retrieve all quote ids
+    //Select one quoteid randomly
+    //Get the quote for that quoteid
     
-    //Step 1: Generating a random quoteId
+    //Step 1: Generating a random quoteid
 
-    $sql = "SELECT quoteId FROM q_quote";  //retrieves all quoteIds
+    $sql = "SELECT `quoteid` FROM `quote` WHERE 1";  //retrieves all quoteids
     
     $stmt = $dbConn -> prepare ($sql);
     
@@ -61,20 +63,20 @@ function getRandomQuote() {
     $randomIndex = array_rand($records);
     
     //echo($records[$randomIndex]['quoteId']);
-    $quoteId = $records[$randomIndex]['quoteId'];
+    $quoteid = $records[$randomIndex]['quoteid'];
     
     //Step 2: Retreiving quote based on Random Quote Id
-    $sql = "SELECT quote, firstName, lastName, authorId 
-            FROM q_quote 
-            NATURAL JOIN q_author
-            WHERE quoteId = $quoteId";
+    $sql = "SELECT quote, firstName, lastName, authorid 
+            FROM quote 
+            NATURAL JOIN author
+            WHERE quoteid = $quoteid";
     $stmt = $dbConn -> prepare ($sql);
     $stmt -> execute();
     $record = $stmt -> fetch(); //using "fetch()" because it's expected to get ONLY ONE record        
     
-    echo  "<em>" . $record['quote']  . "</em><br />";
-    echo "<a target='authorInfo' href='getAuthorInfo.php?authorId=".$record['authorId']."'>-" . $record['firstName'] . " " . $record['lastName'] . "</a>";
-    
+    echo  "<em>" . $record['quote']  . "</em><br><br>";
+    echo "<a target='authorInfo' href='getAuthorInfo.php". $record['authorid'] . "'>-" . $record['firstName'] . " " . $record['lastName'] . "</a>";
+    echo "<br>";
     //print_r($records);
 
 }
@@ -90,15 +92,19 @@ function getRandomQuote() {
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Lab 5: Random Famous Quote Generator </title>
-    </head>
-    <body>
+<head>
+<title> Lab 5</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
 
-
+<body>
+    
+    <h1>Famous Quotes</h1>
+    <h3>A random quote is displayed in every refresh.</h3>
+    
     <?=getRandomQuote()?>        
 
-<br />
+<br>
     <iframe name="authorInfo" width="500" height="300"></iframe>
 
     </body>
