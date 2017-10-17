@@ -1,4 +1,5 @@
 <?php
+
 function getDatabaseConnection() {
     $host = 'localhost'; //cloud 9 database
     $dbname = 'quotes';
