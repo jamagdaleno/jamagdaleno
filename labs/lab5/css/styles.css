@@ -7,22 +7,25 @@ body {
     text-align: center;
 }
 
-h1, h3 {
-    padding: 15px;
-}
-
 a {
     color:white;
+    text-decoration: none;
+    font-weight: bolder;
 }
-
+/*
+img {
+    float: left;
+    clear: left;
+    width: 30%;
+    padding-left:30px;
+}
+*/
 iframe {
-    height: 500px;
-    width: 300px;
-    border: none;
+    width: 500px;
+    height: 400px;
 }
 
 .bolder {
     font-weight: bolder;
     text-decoration: underline;
 }
-
