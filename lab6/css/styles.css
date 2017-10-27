@@ -1,0 +1,23 @@
+            body {
+                background-color: #ffffcc;
+                margin: 1em;
+            }
+
+            h1, form, legend, fieldset {
+                text-align: center;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            
+            .quotes {
+                line-height: 25px;
+            }
+            .button {
+                background-color: grey;
+                border: none;
+                color: white;
+                padding: 5px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+            }  
