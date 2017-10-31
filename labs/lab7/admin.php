@@ -1,4 +1,7 @@
 <?php
+include '../../dbConnection.php';
+$conn = getDatabaseConnection();
+
 session_start();
 
 //print_r($_SESSION);
