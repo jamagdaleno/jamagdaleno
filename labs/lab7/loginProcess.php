@@ -36,10 +36,8 @@ $record = $stmt->fetch(PDO::FETCH_ASSOC);
 //print_r($record);
 
 if (empty($record)) {
-
-  echo "<br><br><br><br><br>";    
-  echo "<br>Wrong credentials!<br>";  
-  echo "<br><a href='index.php'>Go Back</a>";
+    
+  echo "Wrong credentials!";  
   
 } else {
     
@@ -56,13 +54,3 @@ if (empty($record)) {
 
 
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-
-
-    </body>
-</html>
