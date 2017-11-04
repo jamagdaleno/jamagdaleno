@@ -1,7 +1,4 @@
 <?php
-include '../../dbConnection.php';
-$conn = getDatabaseConnection();
-
 session_start();
 
 //print_r($_SESSION);
@@ -46,19 +43,16 @@ function authorList(){
     <body>
 
         <h1> ADMIN SECTION</h1>
-        <h2> Welcome, <?=$_SESSION[adminFullName]?>!</h2>
+        <h2> Welcome <?=$_SESSION[adminFullName]?>!</h2>
 
 <br ><br >
 
 <form action="addAuthor.php">
     <input type="submit" value="Add New Author" />
 </form>
+<br>
 
-<form action="logout.php">
-    <input type="submit" value="Logout" />
-</form><br>
 
-<div id="list">
         <?php 
         
         $authors =authorList();
@@ -73,11 +67,14 @@ function authorList(){
                     <input type='submit' value='Delete'>
                   </form>";
             
-            echo $author['firstName'] . "  " . $author['lastName'] . ", " . $author['country'] . "<br>";
+            echo $author['firstName'] . "  " . $author['lastName'] . " " . $author['country'] . "<br>";
         }
         
         
         ?>
-</div>
+        <br>
+<form action="logout.php">
+    <input type="submit" value="Logout" />
+</form>
     </body>
 </html>
