@@ -1,3 +1,7 @@
+var jQueryScript = document.createElement('script');  
+jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+document.head.appendChild(jQueryScript);
+
 //var randomNumber = 5 + 6;
 //console.log(randomNumber);
 
@@ -8,8 +12,8 @@ Math.floor() rounds down any floating point. For exanple: Math.floor(23.99) = 23
 Math.floor(Math.random() * 99) gives us 0-98
 */
 
-console.log(randomNumber);
-document.getElementById("numberToGuess").innerHTML = randomNumber;
+//console.log(randomNumber);
+//document.getElementById("numberToGuess").innerHTML = randomNumber;
 /*
 The getElementById() method returns the element that has the ID attribute 
 with the specified value and one of the most common methods for manipulating 
@@ -27,28 +31,16 @@ but we could have also used its ID instead: querySelector(‘#guessField’)
 var guesses = document.querySelector('#guesses');
 var lastResult = document.querySelector('#lastResult');
 var lowOrHi = document.querySelector('#lowOrHi');
-/*
-The above three variables each store a reference to the 
-results paragraph we will have within our HTML.
-*/
 
 var guessSubmit = document.querySelector('.guessSubmit');
 var guessField = document.querySelector('guessField');
-/*
-The next two variables, “guessSubmit” and “guessField”, reference 
-the form text input and submit button we will use to control the 
-user’s submission of the guesses.
-*/
 
 var guessCount = 1;
 var resetButton = document.querySelector('#reset');
 resetButton.style.display = 'none';
-/*
-The next two variables, “guessCount” and “resetButton”, will store the 
-number of guesses the user has used, and a reference to the reset button.
-*/
-
-var resetButton;
+guessField.focus();
+var losses = [];
+var wins = [];
 
 function checkGuess()
 {
@@ -64,13 +56,15 @@ function checkGuess()
         {
             lastResult.innerHTML = 'Congratulations! You got it right!';
             lastResult.style.backgroundColor = 'green';
-            lowOrHi.innerHTML = ' ';
+            lowOrHi.innerHTML = '';
             setGameOver();
+            wins.push("Wins");
         }
         else if (guessCount === 7)
         {
             lastResult.innerHTML = 'Sorry, you lost!';
             setGameOver();
+            losses.push("Losses");
         }
         else
         {
@@ -84,6 +78,12 @@ function checkGuess()
             {
                 lowOrHi.innerHTML = 'Last guess was too high!';
             }
+            
+        if (userGuess > 99)
+        {
+            lowOrHi.innerHTML = 'Error<br> Guess must be less than 99';
+            lastResult.style.display = 'none';
+        }
         }
         
         guessCount++;
@@ -121,7 +121,13 @@ function resetGame()
     lastResult.style.backgroundColor = 'white';
     
     randomNumber = Math.floor(Math.random() * 99) + 1;
+    //console.log(randomNumber);
 }
+
+    var total = document.getElementById('#total');
+    total.innerHTML = 'Wins: ' + wins;
+    total.innerHTML = 'Losses: ' + losses;
+    
 
 
 
