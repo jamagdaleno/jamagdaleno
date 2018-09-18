@@ -72,7 +72,7 @@ play();
 ?>
 
     <form> 
-        <input type="submit" value=" Spin!"/>
+        <input type="submit" value="Spin!"/>
     </form>
     
 </div>
