@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>77
 <meta charset="utf-8"/> 
 <title> Lab 2 </title>
 <link  href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -72,7 +72,7 @@ play();
 ?>
 
     <form> 
-        <input type="submit" value="spin!"/>
+        <input type="submit" value=" Spin!"/>
     </form>
     
 </div>
